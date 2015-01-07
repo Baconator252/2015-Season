@@ -9,12 +9,12 @@
 // it from being updated in the future.
 
 
-package org.usfirst.frc4311.2015-Season.subsystems;
+package org.usfirst.frc4311.subsystems;
 
-import org.usfirst.frc4311.2015-Season.RobotMap;
-import org.usfirst.frc4311.2015-Season.commands.*;
+import org.usfirst.frc4311.RobotMap;
+
 import edu.wpi.first.wpilibj.*;
-import edu.wpi.first.wpilibj.can.*;
+
 
 import edu.wpi.first.wpilibj.command.Subsystem;
 

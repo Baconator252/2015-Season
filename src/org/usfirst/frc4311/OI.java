@@ -9,9 +9,9 @@
 // it from being updated in the future.
 
 
-package org.usfirst.frc4311.2015-Season;
+package org.usfirst.frc4311;
 
-import org.usfirst.frc4311.2015-Season.commands.*;
+import org.usfirst.frc4311.commands.*;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.*;
 

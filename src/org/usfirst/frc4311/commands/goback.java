@@ -9,17 +9,17 @@
 // it from being updated in the future.
 
 
-package org.usfirst.frc4311.2015-Season.commands;
+package org.usfirst.frc4311.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
-import org.usfirst.frc4311.2015-Season.Robot;
+import org.usfirst.frc4311.Robot;
 
 /**
  *
  */
-public class  turnright extends Command {
+public class  goback extends Command {
 
-    public turnright() {
+    public goback() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
 

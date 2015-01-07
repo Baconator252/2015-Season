@@ -9,14 +9,14 @@
 // it from being updated in the future.
 
 
-package org.usfirst.frc4311.2015-Season;
+package org.usfirst.frc4311;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
-import org.usfirst.frc4311.2015-Season.commands.*;
-import org.usfirst.frc4311.2015-Season.subsystems.*;
+import org.usfirst.frc4311.commands.*;
+import org.usfirst.frc4311.subsystems.*;
 
 /**
  * The VM is configured to automatically run this class, and to call the

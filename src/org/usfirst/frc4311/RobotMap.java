@@ -9,13 +9,13 @@
 // it from being updated in the future.
 
 
-package org.usfirst.frc4311.2015-Season;
+package org.usfirst.frc4311;
     
 import edu.wpi.first.wpilibj.*;
-import edu.wpi.first.wpilibj.can.*;
+
 
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
-import java.util.Vector;
+
 
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
