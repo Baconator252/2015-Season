@@ -1,0 +1,3 @@
+http://www.wbrobotics.com/javadoc/index.html?edu/wpi/first/wpilibj/package-summary.html
+
+2012 WPILIBJ Java Docs - Reference this for the time being
