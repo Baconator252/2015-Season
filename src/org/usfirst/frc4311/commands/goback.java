@@ -11,14 +11,21 @@
 
 package org.usfirst.frc4311.commands;
 
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Command;
+
 import org.usfirst.frc4311.Robot;
+import org.usfirst.frc4311.subsystems.wheels;
 
 /**
  *
  */
 public class  goback extends Command {
-
+	private Joystick joystick;
+	private wheels w;
+	// USB Port number where the joystick is plugged into
+	// Change if Joystick is not plugged into port #1
+	private static int JOYSTICK_PORT_NUMBER = 1;
     public goback() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
@@ -30,10 +37,17 @@ public class  goback extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	joystick = new Joystick(JOYSTICK_PORT_NUMBER);
+    	w = new wheels();
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+    	double val = joystick.getY();
+    	w.setJaguar1(val);
+    	w.setJaguar2(val);
+    	w.setJaguar3(val);
+    	w.setJaguar4(val);
     }
 
     // Make this return true when this Command no longer needs to run execute()
