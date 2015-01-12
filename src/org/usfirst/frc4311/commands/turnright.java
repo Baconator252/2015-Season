@@ -18,7 +18,7 @@ import org.usfirst.frc4311.Robot;
 import org.usfirst.frc4311.subsystems.wheels;
 
 /**
- *
+ * Class responsible for moving right
  */
 public class  turnright extends Command {
 	private Joystick joystick;

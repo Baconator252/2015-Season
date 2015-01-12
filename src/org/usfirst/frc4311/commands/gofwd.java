@@ -18,7 +18,7 @@ import org.usfirst.frc4311.Robot;
 import org.usfirst.frc4311.subsystems.wheels;
 
 /**
- *
+ * Class responsible for moving forwards
  */
 public class  gofwd extends Command {
 	private Joystick joystick;
