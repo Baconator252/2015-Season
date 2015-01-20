@@ -12,9 +12,11 @@
 package org.usfirst.frc4311;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
+import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
+
 import org.usfirst.frc4311.commands.*;
 import org.usfirst.frc4311.subsystems.*;
 
@@ -103,5 +105,17 @@ public class Robot extends IterativeRobot {
      */
     public void testPeriodic() {
         LiveWindow.run();
+    }
+
+    public void operatorControl() {
+    	 RobotMap.wheelsRobotDrive41.setSafetyEnabled(true);
+        while (isOperatorControl() && isEnabled()) {
+        	
+        	// Use the joystick X axis for lateral movement, Y axis for forward movement, and Z axis for rotation.
+        	// This sample does not use field-oriented drive, so the gyro input is set to zero.
+        	RobotMap.wheelsRobotDrive41.mecanumDrive_Cartesian(oi.joystick1.getX(), oi.joystick1.getY(), oi.joystick1.getZ(), 0);
+            
+            Timer.delay(0.005);	// wait 5ms to avoid hogging CPU cycles
+        }
     }
 }
